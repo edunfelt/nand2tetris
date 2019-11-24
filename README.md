@@ -5,7 +5,7 @@ This is the first part of a two-part course in which students learn how to const
 
 Different versions of this course have been taught at Harvard, Stanford, Chicago and 100+ universities and high schools all over the world. Both parts are currently available online for self-study through [coursera.org](https://www.coursera.org/learn/build-a-computer), and all course material and information can be found at [nand2tetris.org](https://www.nand2tetris.org/).
 
-My solutions to the course's six projects are found below. I hope that it will help someone else taking the course. Note that there are often several ways to solve a problem, and I am open to suggestions/questions! 👩‍💻
+These are my solutions to the course's six projects. I hope that it will help someone else taking the course. Note that there are often several ways to solve a problem, and I am open to suggestions/questions! 👩‍💻
 
 ## Projects
 
