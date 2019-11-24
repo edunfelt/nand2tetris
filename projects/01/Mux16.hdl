@@ -14,6 +14,7 @@ CHIP Mux16 {
     OUT out[16];
 
     PARTS:
+    /* A simple Python script can be used to generate the code */
     Mux(a=a[0], b=b[0], sel=sel, out=out[0]);
     Mux(a=a[1], b=b[1], sel=sel, out=out[1]);
     Mux(a=a[2], b=b[2], sel=sel, out=out[2]);

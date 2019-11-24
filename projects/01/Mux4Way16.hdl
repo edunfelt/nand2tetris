@@ -16,7 +16,11 @@ CHIP Mux4Way16 {
     OUT out[16];
 
     PARTS:
-    Mux16(a=a, b=b, sel=sel[0], out=w1);
-    Mux16(a=c, b=d, sel=sel[0], out=w2);
-    Mux16(a=w1, b=w2, sel=sel[1], out=out);
+    /* First use the last entry of 'sel' to select two of the four buses.
+    Then select from these two buses which one to output by using the first
+    entry of 'sel'.
+    */
+    Mux16(a=a, b=b, sel=sel[0], out=o1);
+    Mux16(a=c, b=d, sel=sel[0], out=o2);
+    Mux16(a=o1, b=o2, sel=sel[1], out=out);
 }
