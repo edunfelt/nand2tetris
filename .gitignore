@@ -1,0 +1,8 @@
+# ignore all .out files
+*.out
+
+# do not include the demo folder
+demo/
+
+# do not include the 0th project
+00/
