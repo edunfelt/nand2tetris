@@ -13,5 +13,10 @@ CHIP FullAdder {
         carry;   // Left bit of a + b + c
 
     PARTS:
-    // Put you code here:
+    /* We proceed in the same way as in usual arithmetic, adding the first two numbers 'a' and 'b' and then
+	    adding 'a + b' and 'c'. Then we take care of the carry using a simple OR-gate.
+    */
+    HalfAdder(a=a, b=b, sum=s1, carry=c1);
+    HalfAdder(a=s1, b=c, sum=sum, carry=c2);
+    Or(a=c1, b=c2, out=carry);
 }
