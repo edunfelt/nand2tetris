@@ -6,3 +6,4 @@ demo/
 
 # do not include the 0th project
 00/
+*.swp
