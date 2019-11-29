@@ -31,3 +31,18 @@ are .tst-files and .cmp-files for testing the chips using the hardware simulator
 - DMux4Way
 - DMux8Way
 </details>
+
+### Project 2: ALU
+The goal of the second project is to build "the centerpiece of the CPU", by which we mean the *Arithmetic Logic Unit*, or ALU. 
+This chip performs many different arithmetic and logical operations, we provide our ALU with abilities to add, subtract numbers,
+and perform basic logic on 16-bit inputs. Other functionality, such as multiplication, division and floating point arithmetic is not
+implemented in the hardware, but will instead be added later at a higher level.
+<details>
+  <summary>Complete chip-set</summary>
+  
+  - HalfAdder
+  - FullAdder
+  - Add16
+  - Inc16
+  - ALU
+</details>
