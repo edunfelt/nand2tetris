@@ -14,6 +14,7 @@ CHIP Register {
     OUT out[16];
 
     PARTS:
+    /* Repetitive code can be generated using a simple Python script. */
     Bit(in=in[0], load=load, out=out[0]);
     Bit(in=in[1], load=load, out=out[1]);
     Bit(in=in[2], load=load, out=out[2]);

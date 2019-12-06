@@ -15,8 +15,11 @@ CHIP RAM8 {
     OUT out[16];
 
     PARTS:
+    /* Loads the given input into the correct register, as given by the address. */
     DMux8Way(in=load, sel=address, a=load0, b=load1, c=load2, d=load3, e=load4, f=load5,
     g=load6, h=load7);
+
+    /* Repetitive code can be generated using a simple Python script. */
     Register(in=in, load=load0, out=reg0);
     Register(in=in, load=load1, out=reg1);
     Register(in=in, load=load2, out=reg2);
@@ -25,5 +28,7 @@ CHIP RAM8 {
     Register(in=in, load=load5, out=reg5);
     Register(in=in, load=load6, out=reg6);
     Register(in=in, load=load7, out=reg7);
+
+    /* Selects the correct register for output according to the given address. */
     Mux8Way16(a=reg0, b=reg1, c=reg2, d=reg3, e=reg4, f=reg5, g=reg6, h=reg7, sel=address, out=out);
 }
