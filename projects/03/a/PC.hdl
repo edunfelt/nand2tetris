@@ -16,5 +16,15 @@ CHIP PC {
     OUT out[16];
 
     PARTS:
-    // Put your code here:
+    /* Increment the register, provides the "counting" functionality.*/
+    Inc16(in=reg, out=increg);
+
+    /* We now put the counter in the right operating mode, its three control bits tells us if
+    the output should be incremented, loaded with a new counting base, or reset to zero, 
+    as indicated in the API. Note that the register's load bit is set to 1, to ensure that
+    the register gets fed back into the incrementer.*/
+    Mux16(a=reg, b=increg, sel=inc, out=o1);
+    Mux16(a=o1, b=in, sel=load, out=o2);
+    Mux16(a=o2, b=false, sel=reset, out=o3);
+    Register(in=o3, load=true, out=out, out=reg);
 }
