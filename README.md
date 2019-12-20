@@ -5,7 +5,9 @@ This is the first part of a two-part course in which students learn how to const
 
 Different versions of this course have been taught at Harvard, Stanford, Chicago and 100+ universities and high schools all over the world. Both parts are currently available online for self-study through [coursera.org](https://www.coursera.org/learn/build-a-computer), and all course material and information can be found at [nand2tetris.org](https://www.nand2tetris.org/).
 
-These are my solutions to the course's six projects. I hope that it will help someone else taking the course, but please do not copy solutions - being stuck is part of learning and there is much to learn by overcoming problems and finding solutions on your own. Note that there are often several ways to solve a problem, and I am open to suggestions/questions! 👩‍💻
+These are my solutions to the course's six projects. I hope that it will help someone else taking the course, but please do not copy solutions - being stuck is part of learning and there is much to learn by overcoming problems and finding solutions on your own. Note that there are often several ways to solve a problem, and I am open to suggestions/questions! 
+
+Emilia Dunfelt, 2019 👩‍💻
 
 ## Projects
 
@@ -45,4 +47,21 @@ implemented in the hardware, but will instead be added later at a higher level.
   - Add16
   - Inc16
   - ALU
+</details>
+
+### Project 3: RAM
+In the third project the RAM unit of the Hack computer is built. We now move on from the previous combinational logic,
+to the sequential logic of clocked chips. The entire memory chip-set is built in steps, starting from a primitive data flip-flop gate
+all the way up to n-bit registers and a complete set of RAM chips.
+<details>
+  <summary>Complete chip-set</summary>
+  
+  - Bit
+  - Register
+  - RAM8
+  - RAM64
+  - RAM512
+  - RAM4K
+  - RAM16K
+  - PC
 </details>
