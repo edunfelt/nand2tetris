@@ -65,3 +65,13 @@ all the way up to n-bit registers and a complete set of RAM chips.
   - RAM16K
   - PC
 </details>
+
+### Project 4: Machine Language Introduction
+The purpose of this project is to become familiar with the Hack machine language, called assembly, by writing a few simple programs
+using the assembly language, translate them into binary code and execute them using the given Assembler and the CPU emulator. For this purpose, we assume the computer and the machine language is already built.
+<details>
+  <summary>Programs</summary>
+  
+  - Mult
+  - Fill
+</details>
