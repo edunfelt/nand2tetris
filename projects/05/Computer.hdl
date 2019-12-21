@@ -19,5 +19,8 @@ CHIP Computer {
     IN reset;
 
     PARTS:
-    // Put your code here:
+    /** Implementation as seen in Diagram 5.9 of The Elements of Computing Systems **/
+    ROM32K(address=pc, out=cpuinstruct);
+    CPU(inM=memout, instruction=cpuinstruct, reset=reset, outM=outM, writeM=writeM, addressM=addressM, pc=pc);
+    Memory(in=outM, load=writeM, address=addressM, out=memout);
 }
