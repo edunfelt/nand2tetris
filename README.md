@@ -75,3 +75,14 @@ using the assembly language, translate them into binary code and execute them us
   - Mult
   - Fill
 </details>
+
+### Project 5: Hack Computer Architecture
+In this project all the previously built parts come together to finally form the complete architecture of the 16-bit Hack hardware platform.
+The Memory chip is built with the complete address space of the Hack computer, containing a RAM unit with 16K registers, a Screen with 8K registers and a Keyboard with 1 register. Then the CPU is built, containing an instruction memory and a data memory from which it can fetch, operate on, and modify data. Lastly, the topmost chip is built by assembling the *CPU*, the instruction memory *ROM32K* and the data memory *Memory*.
+<details>
+  <summary>Complete chip-set</summary>
+  
+  - Memory
+  - CPU
+  - Computer
+</details>
