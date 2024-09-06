@@ -15,12 +15,11 @@ CHIP Or8Way {
     PARTS:
     /* Successively feed the outputs of the previous Or, to keep comparing 
     the individual bits. */
-    Or(a=in[0], b=in[7], out=o1);
-    Or(a=o1, b=in[6], out=o2);
-    Or(a=o2, b=in[5], out=o3);
-    Or(a=o3, b=in[4], out=o4);
-    Or(a=o4, b=in[3], out=o5);
-    Or(a=o5, b=in[2], out=o6);
-    Or(a=o6, b=in[1], out=o7);
-    Or(a=o7, b=in[0], out=out);
+    Or(a=in[0], b=in[1], out=o1);
+    Or(a=in[2], b=in[3], out=o2);
+    Or(a=in[4], b=in[5], out=o3);
+    Or(a=in[6], b=in[7], out=o4);
+    Or(a=o1, b=o2, out=o6);
+    Or(a=o3, b=o4, out=o7);
+    Or(a=o6, b=o7, out=out);
 }
